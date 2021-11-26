@@ -1,0 +1,164 @@
+
+.menu{
+    position: relative;
+    z-index: 2;
+}
+
+.padre{
+    position: relative;
+    z-index: 1;
+}
+
+.titulo,header{
+    text-align: center;
+}
+.titulo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color:  rgb(4, 4, 104);
+}
+
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    color: #00f;
+}
+.galeriaimagenes{
+    background-color: #FF0000;
+    height: 150px;
+    width: auto;
+    margin: 20px auto;
+}
+.galeriavideos{
+    background-color: rgb(101, 185, 253);
+    height: 160px;
+    width: auto;
+    padding-left: 280px;
+}
+
+.vertical{
+    width: 170px;
+    padding: 20px 20px;
+    position: relative;
+    align-content: center;
+}
+
+video{
+    position: relative;
+    align-content: center;
+    width: 210px;
+    padding: 20px 20px;
+}
+
+#san{
+    width: 210px;
+}
+
+button{
+    
+    margin: 20px;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(5, 202, 71);
+    border-radius: 2px;
+    border:unset;
+}
+
+.botones{
+    position: relative;
+    margin: 10px 0px 0px 535px;
+    /*padding-left: 550px;*/
+}
+
+button:hover{
+    color: black;
+    background-color:#0000FF ;
+  }
+
+footer{
+    position: relative;
+    z-index: 2;
+    
+    background-color: #FF0000;
+    margin: 0px auto;
+   /*position: fixed; */
+    bottom: 0;
+    width: 100%; 
+    align-content: center;
+    height: 120px;
+}
+#leyenda{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    text-align: center;    
+    align-content: center;
+}
+
+a{ text-decoration: none;}
+.vinculo{font-weight: bold;}
+
+
+ article{
+    display: none;
+    margin:0 auto;
+    margin-top: 6px;
+}   
+
+article:target{
+    display: block;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+
+.clic{
+    margin: 10px 0px 0px 400px;
+    padding: 10px 10px;
+    width: 500px;
+    display: flex;
+    align-content: center;
+    color: #ffffff;
+    background-color: #0000FF;
+    border-radius:20px;
+}
+.cajaimagen{position: relative;display: inline-block;}
+.imagenclic{ margin: 0px 0px 0px 55px;}
+.prevista{width: 400px;}
+
+
+/*cotizacciones*/
+
+.informacion{
+    position: relative;
+    justify-items: center;
+}
+
+label, .salida{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    width: 160px;
+    height: 30px;
+    display: inline-block;
+}
+
+input{width: 150px;height: 22px;}
+.numero{width:80px;}
+
+.formulario{
+    background-color: rgb(245, 237, 125);
+    width: 400px;
+    height: 300px;
+    justify-items: center;
+}
+.informacion{position: relative;padding:  20px 0px 20px 40px;}
+
+.cotizacion{padding: 0px 0px 0px 86px;}
+
+.formulario{position: relative;justify-content: center; margin:20px 0px 0px 455px;}
+
+
+

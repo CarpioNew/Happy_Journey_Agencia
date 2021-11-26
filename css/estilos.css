@@ -1,0 +1,95 @@
+
+.active{
+    background-color: rgba(66, 51, 2, 0.342);
+}
+
+.imagenes{
+    width: 915px;
+    height: 420px;
+    margin: 0 auto;
+    box-shadow: 0px 5px 20px 5px rgb(12, 12, 12);
+}
+
+body{ background-color: rgb(214, 213, 205);}
+
+ul{
+    z-index: 2;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 50px;
+    overflow: hidden;
+    position: fixed; /* fijo*/
+    top: 0;
+    width: 100%;
+    background-color: hsl(49, 100%, 50%);
+    left: 0;
+}
+
+li{
+    float: left;
+}
+
+li a{
+    display: block;
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+    padding: 20px 20px ;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a{font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+
+li:hover{ background-color: blue; transition: 1s ;}
+
+.active{background-color: rgba (0,0,0,0.3);}
+
+/* carrucel */
+
+.carru{
+    z-index: 1;
+    background-color: rgb(248, 250, 118);
+    position: relative;
+    padding: 50px 0px 50px 0px;
+    margin: 50px auto 0px auto;
+}   
+
+.carru{
+    position: relative;
+}
+
+.titulo{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    color: blue;
+    text-align: center;
+}
+
+footer{
+    position: relative;
+    z-index: 2;
+    background-color: rgb(140, 140, 143);
+    margin: 0px auto;
+   /*position: fixed; */
+    bottom: 0;
+    width: 100%; 
+    align-content: center;
+    height: 120px;
+}
+#leyenda{
+    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 30px 40px;
+    text-align: center;    
+    align-content: center;
+}
+.link{ 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+

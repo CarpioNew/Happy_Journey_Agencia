@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Registrate</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	</head>
+	<body>
+		<nav>
+			<ul>
+				<li><a href="index.html" title="Home">Inicio</a></li>
+				<li><a href="acerca.html" title="Acerca de">Acerca de</a></li>
+				<li><a href="galeria.html" title="Galeria">Galeria</a></li>
+				<li><a href="registro.html" title="Registro">Registrate</a></li>
+				<li><a href="cotizar.html" title="Galeria 2">Cotizar</a></li>
+				<li><a href="contactanos.html" title="Contactanos">Contactanos</a></li>
+			</ul>
+		</nav>
+ <style>
+	#formulario{width: 400px; margin: 0 auto; font-weight: bold;}
+	label{width: 100px; display: inline-block; color: #FFF;}
+	table{width: 400px; margin:0 auto; background-color: #FF0000; color: #FFF;}
+	table, tr, th, td{border: 1px solid #000; border-collapse: collapse;}
+	table th, td{width: 133px;} 
+	section{background-color: #1A22CA;}
+	h1, h4{text-align: center; color: #FFF;}
+	legend{color: #FFF; font-weight: bold;}
+	button{background-color: #FF0000; font-weight: bold; color: #FFF;}
+	#resultado1, #resultado2, #resultado3, #resultado4, #resultado5, #resultado6{text-align: center; font-weight: bold; color: #FFF;}
+  </style>
+</head>
+<br/>
+<body>
+<br/>
+<section>
+  <h1>REGISTRO</h1>
+  <div id="formulario">
+	<fieldset>
+		<legend>Datos personales</legend>
+		<label>Nombre:</label>
+			<input type="text" name="nombre" onchange="agregarNombre(this)"></input>
+			<br/>
+		<label>Edad:</label>
+			<input type="text" name="edad" onchange="agregarEdad(this)"></input>
+			<br/>
+		<label>Email:</label>
+			<input type="text" name="email" onchange="agregarEmail(this)"></input>
+			<br/><br/>
+		<button onclick="agregar();">Agregar</button>
+		<button onclick="mostrar();">Motrar</button>
+	</fieldset>
+  </div>
+  <h1>Sus datos</h1>
+  <div id="resultado1">Nombre: </div>
+  <div id="resultado2">Edad: </div>
+  <div id="resultado3">Email: </div>
+  
+  <h1>Resultados</h1>
+  <table>
+	<tr>
+		<th>Nombre</th>
+		<th>Edad</th>
+		<th>Email</th>
+	</tr>
+  </table>
+  <table id="resultado4"></table>
+  </section>
+  <script>
+	var nombre = null;
+	var edad = null;
+	var email = null;
+	var arreglo = new Array();
+	var j = 0;
+	
+	function agregarNombre(parametro){
+		nombre = parametro.value;
+		var mostrarNombre = document.getElementById("resultado1");
+		mostrarNombre.innerHTML = "Nombre: " +nombre;
+	}
+	
+	function agregarEdad(parametro){
+		edad = parametro.value;
+		var mostrarEdad = document.getElementById("resultado2");
+		mostrarEdad.innerHTML = "Edad: " +edad;
+	}
+	
+	function agregarEmail(parametro){
+		email = parametro.value;
+		var mostrarEmail = document.getElementById("resultado3");
+		mostrarEmail.innerHTML = "Email: " +email;
+	}
+	
+	function agregar(){
+		var objeto = {
+			"nombre": nombre,
+			"edad": edad,
+			"email": email,
+		};
+		arreglo[j] = objeto;
+		j++;
+		limpiar();
+		alert("Registro guardado");
+	}
+	
+	function mostrar(){
+		var msj = "";
+		for(var i = 0; i < arreglo.length; i++){
+			msj += "<tr>"+
+				"<td>" +arreglo[i].nombre +"</td>" +
+				"<td>" +arreglo[i].edad +"</td>" +
+				"<td>" +arreglo[i].email +"</td>"+
+					"</tr>";
+		}
+		document.getElementById("resultado4").innerHTML = msj;
+	}
+	
+	function limpiar(){
+		document.getElementById("resultado1").innerHTML = "Nombre: ";
+		document.getElementById("resultado2").innerHTML = "Edad: ";
+		document.getElementById("resultado3").innerHTML = "Email: ";
+	}
+	
+  </script>
+  
+  	<footer>
+		<h2>Visitanos en:</h2>
+		<cite>Todos los derechos reservados</cite>
+		
+		
+		<br>
+		
+		<cite><a href="https:www.google.com">www.Happy Journey.com</a></cite>
+	</footer>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
+

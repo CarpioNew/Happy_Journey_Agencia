@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html lang="es">
+	<head>
+		<title>Cotizar</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/estilos_galeria2.css">
+	</head>
+	<body>
+		<nav class="menu">
+			<ul>
+				<li><a href="index.html" title="Home">Inicio</a></li>
+				<li><a href="acerca.html" title="Acerca de">Acerca de</a></li>
+				<li><a href="galeria.html" title="Galeria">Galeria</a></li>
+				<li><a href="registro.html" title="Registro">Registrate</a></li>
+				<li><a href="cotizar.html" title="Cotizar">Cotizar</a></li>
+				<li><a href="contactanos.html" title="Contactanos">Contactanos</a></li>
+			</ul>
+		</nav>
+		
+<div class="padre">
+        <header>
+            <br>
+            <h3>Cotizaciones</h3>
+        </header>
+
+    <!--imagenes-->
+    <div class= "galeriaimagenes" >
+        <a href="#img01">
+            <img  class="vertical" src="img/chichen itza.jpg" alt="Chichen Itzá" title="Chichen Itzá">
+        </a>
+        <a href="#img02">
+            <img class="vertical" src="img/machu pichu.jpg" alt="Machu Picchu" title="Machu Picchu">
+        </a>
+        <a href="#img03">
+            <img class="vertical" src="img/china.jpg" alt="Muralla China" title="Muralla China">
+        </a>
+        <a href="#img04">
+            <img class="vertical" src="img/paris.jpg" alt="Paris" title="Paris">
+        </a>
+        <a href="#img05">
+            <img class="vertical" src="img/vegas.jpg" alt="Las Vegas" title="Las Vegas">
+        </a>
+        <a href="#img06">
+            <img class="vertical" src="img/san luis.jpg" alt="San Luis Potosí" title="San Luis Potosí">
+        </a>
+    </div>
+</div>
+
+<div class="clic">
+
+    <article id="img01" class="imagen">
+    <div class="cajaimagen">
+        <div><img id="chichen" class="prevista" src="img/chichen itza.jpg" alt="chichen itzá" title="chichen itzá"></div>
+        <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+    </div>
+    </article>
+
+    <article id="img02" class="imagen">
+        <div class="cajaimagen">
+        <div><img id="machu" class="prevista" src="img/machu pichu.jpg" alt="machu pichu" title="machu pichu"></div>
+        <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+        </div>
+    </article>
+
+    <article id="img03" class="imagen">
+        <div class="cajaimagen">
+            <div><img id="china" class="prevista" src="img/china.jpg" alt="Muralla China" title="Muralla China"></div>
+            <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+        </div>
+    </article>
+
+    <article id="img04" class="imagen">
+        <div class="cajaimagen">
+            <div><img id="paris" class="prevista" src="img/paris.jpg" alt="Paris" title="Paris"></div>
+            <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+        </div>    
+    </article>
+    <article id="img05" class="imagen">
+        <div class="cajaimagen">
+            <div><img id="vegas" class="prevista" src="img/vegas.jpg" alt="Las Vegas" title="Las Vegas"></div>
+            <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+        </div>
+        
+    </article>
+    <article id="img06" class="imagen">
+        <div class="cajaimagen">
+            <div><img id="san" class="prevista" src="img/san luis.jpg" alt="San Luis Potosí" title="San Luis Potosí"></div>
+            <div><label>Precio: </label><input type="text" value="1000" disabled /></div>
+        </div> 
+    </article>
+</div>
+
+<!--formulario-->
+<div class="formulario">
+    <section class="informacion">
+       
+        <label>Inicio: </label>
+            <input type="date" id="inicio">
+        <br>
+        <label>Fin: </label>
+            <input type="date" id="fin">
+        <br>    
+        <label>Hospedaje y Vuelo</label>
+            <input type="checkbox" id="caja" value="hospedaje y vuelo"></input>
+        <br>
+        <label>Personas</label>
+            <input class="numero" type="number" id="personas"></input> 
+    </section>        
+    <div class="cotizacion">
+        <button class="boton" id="boton" type="submit">COTIZAR</button>
+    </div>
+</div>
+        <footer>
+            <p id="leyenda">
+            Visitanos en: <br/>
+                Todos los derechos reservados <br/>
+                www.Happy Journey.mx
+            </p>
+        </footer>
+
+    <script src="js/cotizacion.js"></script>
+</body>
+</html>
